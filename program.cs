@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -16,6 +16,7 @@ namespace BinarySearchTree
             binaryTree.add(70);
             binaryTree.add(60);
             binaryTree.Display();
+            binaryTree.GetSize();
         }
     }
 }

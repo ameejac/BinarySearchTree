@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -65,7 +65,10 @@ namespace BinarySearchTree
                 this.rightTree.Display();
             }
         }
-        
+        public void GetSize()
+        {
+            Console.WriteLine("size" + ""  + (1+ this.leftCount + this.rightCount));
+        }
     }
 
 }
