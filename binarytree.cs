@@ -69,6 +69,32 @@ namespace BinarySearchTree
         {
             Console.WriteLine("size" + ""  + (1+ this.leftCount + this.rightCount));
         }
+        //uc3 search perticular element in the BST
+        public bool IfExist(T element, BinaryTree<T> node)
+        {
+            if(node ==null)
+            {
+                return false;
+            }
+            if(node.nodeData.Equals(element))
+            {
+                Console.WriteLine("found the element in BST:" + "" + node.nodeData);
+                    result = true;
+            }
+            else
+            {
+                Console.WriteLine(" current element is{0} in BST:" + node.nodeData);
+            }
+            if(element.CompareTo(node.nodeData) < 0)
+            {
+                IfExist(element, node.leftTree);
+            }
+            if(element.CompareTo(node.nodeData) > 0)
+            {
+                IfExist(element, node.rightTree);
+            }
+            return result;
+        }
     }
 
 }

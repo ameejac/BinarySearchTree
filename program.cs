@@ -15,8 +15,13 @@ namespace BinarySearchTree
             binaryTree.add(30);
             binaryTree.add(70);
             binaryTree.add(60);
+            binaryTree.add(63);
+            binaryTree.add(16);
+            binaryTree.add(67);
             binaryTree.Display();
             binaryTree.GetSize();
+            bool result = binaryTree.IfExist(67, binaryTree);
+            Console.WriteLine(result);
         }
     }
 }
